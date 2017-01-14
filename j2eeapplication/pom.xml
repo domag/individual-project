@@ -5,21 +5,25 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>J2EE Applications Example</name>
+  
+  
 
 <repositories>
+	<repository>
+    		<id>prime-repo</id>
+    		<name>PrimeFaces Maven Repository</name>
+    		<url>http://repository.primefaces.org</url>
+    </repository>
   <repository>
     <id>java.net2</id>
     <name>Repository hosting the jee6 artifacts</name>
     <url>http://download.java.net/maven/2</url>
   </repository>
-</repositories>        
+</repositories> 
+
+       
 <dependencies>
-  <dependency>
-    <groupId>javax</groupId>
-    <artifactId>javaee-web-api</artifactId>
-    <version>6.0</version>
-    <scope>provided</scope>
-  </dependency>
+ 
 
   	<dependency>
   		<groupId>org.hibernate</groupId>
@@ -47,11 +51,13 @@
         	<artifactId>spring-faces</artifactId>
         	<version>2.3.1.RELEASE</version>
         </dependency>
-        <dependency>
-        	<groupId>org.springframework</groupId>
-        	<artifactId>spring-orm</artifactId>
-        	<version>3.1.1.RELEASE</version>
-        </dependency>
+ <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>3.1.1.RELEASE</version>
+</dependency>
+
         <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
 		<dependency> 
     		<groupId>com.oracle</groupId>
@@ -131,6 +137,14 @@
         	<artifactId>hibernate-entitymanager</artifactId>
         	<version>4.1.8.Final</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
+<dependency>
+    <groupId>org.hibernate.javax.persistence</groupId>
+    <artifactId>hibernate-jpa-2.0-api</artifactId>
+    <version>1.0.1.Final</version>
+</dependency>
+        
+
 
 </dependencies>
 
